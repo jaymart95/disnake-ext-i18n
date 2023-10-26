@@ -1,6 +1,6 @@
 from os import getenv
 from typing import Optional
-from discord import (
+from disnake import (
     Color,
     Embed,
     Intents,
@@ -15,16 +15,16 @@ from random import randint
 from functools import partial
 
 from dotenv import load_dotenv
-from discord.ext.i18n import (
+from disnake.ext.i18n import (
     AutoI18nAgent,
     Language,
     Detector,
     AgentSession,
     no_translate,
 )
-from discord.enums import InputTextStyle
-from discord.ui import View, Button, Modal, Select
-from discord.ui.input_text import InputText
+from disnake.enums import InputTextStyle
+from disnake.ui import View, Button, Modal, Select
+from disnake.ui.input_text import InputText
 
 
 intents = Intents.default()

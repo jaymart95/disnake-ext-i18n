@@ -1,16 +1,16 @@
 from inspect import getfullargspec
 from typing import Any, Callable, Optional, Union, Coroutine
-from discord import Interaction, Webhook
-from discord.types.snowflake import Snowflake
-from discord.abc import Messageable
-from discord.message import Message
-from discord.http import HTTPClient
-from discord.interactions import InteractionResponse
-from discord.webhook.async_ import AsyncWebhookAdapter, WebhookMessage
-from discord.ui import Modal
+from disnake import Interaction, Webhook
+from disnake.types.snowflake import Snowflake
+from disnake.abc import Messageable
+from disnake.message import Message
+from disnake.http import HTTPClient
+from disnake.interactions import InteractionResponse
+from disnake.webhook.async_ import AsyncWebhookAdapter, WebhookMessage
+from disnake.ui import Modal
 
-from discord.ext.i18n.language import Language
-from discord.ext.i18n.preprocess import (
+from disnake.ext.i18n.language import Language
+from disnake.ext.i18n.preprocess import (
     TranslationAgent,
     Translator,
 )

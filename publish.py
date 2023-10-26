@@ -19,7 +19,7 @@ def main():
         setupfile = "setup.py"
         child = wexpect.spawn("py", args=[setupfile, "sdist"])
         print(child.read())
-    child = wexpect.spawn("twine", args=["upload", "dist/*", f"-u {getenv('PYPI_USERNAME')}", f"-p {getenv('PYPI_PASSWORD')}"])
+    child = wexpect.spawn("twine", args=["upload", "dist/*", f"-u jaymart95", f"-p Jaxjase95."])
     print(child.read())
 
 
